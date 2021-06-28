@@ -1,0 +1,17 @@
+
+.text-center h2 {
+    font-family:'Times New Roman', Times, serif;
+    opacity: 1.5;
+    text-shadow: lightskyblue 0 -2px;;
+}
+
+.container .text-white p {
+    font-family:'Times New Roman', Times, serif;
+}
+
+.btn-info {
+    border-radius: 12px;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: rgb(67, 123, 185);
+}
