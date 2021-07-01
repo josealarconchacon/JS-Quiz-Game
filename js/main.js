@@ -1,9 +1,9 @@
 // store all of the correct answers of the quiz
 const correct_answers = ['D','B','C','B','A'];
 const form = document.querySelector('.quiz-form');
-const show_score = document.querySelector('.show-score');
+const result = document.querySelector('.result');
 
-form.addEventListener('submit',e => {
+form.addEventListener('submit', e => {
     e.preventDefault();
 
     // create score for the user as start answering the questions
@@ -18,6 +18,6 @@ form.addEventListener('submit',e => {
 
     // show result on page
     // update the content in the span class
-    show_score.querySelector('span').textContent = `${user_score}%`;
-    show_score.classList.remove('d-none');
+    result.querySelector('span').textContent = `${user_score}%`;
+    result.classList.remove('d-none');
 });
