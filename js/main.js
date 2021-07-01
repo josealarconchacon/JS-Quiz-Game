@@ -16,8 +16,12 @@ form.addEventListener('submit', e => {
         }
     });
 
+    scrollTo(0,0);
     // show result on page
     // update the content in the span class
     result.querySelector('span').textContent = `${user_score}%`;
     result.classList.remove('d-none');
 });
+
+
+
