@@ -16,11 +16,21 @@ form.addEventListener('submit', e => {
         }
     });
 
-    scrollTo(0,0);
     // show result on page
-    // update the content in the span class
-    result.querySelector('span').textContent = `${user_score}%`;
+    scrollTo(0,0);
     result.classList.remove('d-none');
+
+    // show result animation
+    let output_score = 0;
+    const timer = setInterval(() => {
+        // update the content in the span class
+        result.querySelector('span').textContent = `${output_score}%`;
+        if(output_score === user_score) {
+            clearInterval(timer);
+        } else {
+            output_score++;
+        }
+    },10);
 });
 
 
